@@ -47,3 +47,4 @@
 - [practices/p-8/index.html](https://hafizahmedmoon.github.io/web-dev-code/practices/p-8/index.html)
 - [practices/p-9/index.html](https://hafizahmedmoon.github.io/web-dev-code/practices/p-9/index.html)
 - [bash-practice/index.html](https://hafizahmedmoon.github.io/web-dev-code/bash-practice/index.html)
+- [task-board/index.html](https://hafizahmedmoon.github.io/web-dev-code/task-board/index.html)

@@ -1,0 +1,179 @@
+.unschedule {
+    min-width: 220px;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.task {
+    text-align: center;
+    margin: 8px 16px;
+    padding: 8px 16px;
+    background-color: lightskyblue;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+[draggable="true"] {
+    cursor: move;
+}
+
+.drag-target-active {
+    border: 5px dotted red !important;
+}
+
+.wrapper-time-graph {
+    border: 1px solid #ccc;
+    padding-bottom: 8px;
+    height: calc(100vh - 68px);
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.days-name {
+    top: 0;
+    position: sticky;
+    background-color: #ddd;
+    margin-bottom: 8px;
+    z-index: 10;
+}
+
+.days-name h4 {
+    margin: 8px;
+}
+
+
+.time-graph {
+    min-width: 688px;
+    position: relative;
+    height: 2498px; /* cell size 26px of 15 min duration and plus 2px for hour grid line */
+}
+
+.time-graph .task {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    min-height: 26px;
+    font-size: 14px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days {
+    background: repeating-linear-gradient(
+            180deg,
+            #aaa,
+            #aaa 2px,
+            transparent 2px,
+            transparent 104px
+        ),
+        repeating-linear-gradient(
+            180deg,
+            transparent 52px,
+            #ccc 52px,
+            #ccc 53px,
+            transparent 53px,
+            transparent 156px
+        );
+}
+
+.day {
+
+    position: relative;
+    border-left: 1px solid #ccc;
+    height: 2496px;
+}
+
+.time {
+    min-width: 50px;
+}
+
+.time > div {
+    position: relative;
+    top: -8px;
+    height: 104px; /* equal to 26 * 4 cell size */
+    padding: 0 4px;
+}
+
+.time-now {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid red;
+}
+
+.time-now:has(span:empty) {
+    visibility: hidden;
+}
+
+.time-now span {
+    position: absolute;
+    top: -14px;
+    left: 1px;
+    color: red;
+    background: white;
+    font-size: 12px;
+}
+
+.time-highlight {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #a553;
+}
+
+.modal {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+}
+.modal .backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: #0005;
+}
+.modal .modal-content {
+    position: absolute;
+    inset:0;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    margin: auto;
+    border: 1px solid #999;
+    border-radius: 12px;
+    max-width: 600px;
+    background-color: #ccc;
+    padding: 16px;
+}
+.modal .side {
+    margin-left: 8px;
+}
+.modal .header {
+    margin-bottom: 16px;
+}
+.modal .header input {
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+.modal .header input {
+    border-radius: 4px;
+}
+.modal .header input {
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+.modal textarea {
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 8px;
+    min-height: 120px;
+}
