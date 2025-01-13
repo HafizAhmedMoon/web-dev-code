@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "8477801790",
+    "project_id": "ionic-dev-dfad4",
+    "storage_bucket": "ionic-dev-dfad4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8477801790:android:8f8f1cec84ccc551a9806f",
+        "android_client_info": {
+          "package_name": "com.eShopping"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsQGbMbeLbxNRVBLcN_polM5iIvNAEYps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
